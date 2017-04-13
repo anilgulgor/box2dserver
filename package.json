@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "socket-game-server v1.0.0",
+  "main": "Server/server.js",
+  "scripts": {
+    "start": "node Server/Server.js"
+  },
+  "author": "anilgulgor",
+  "license": "ISC",
+  "dependencies": {
+    "box2d": "^1.0.0",
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
