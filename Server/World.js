@@ -198,7 +198,7 @@ World.prototype.createBox = function (dam, d, x, y, w2, h2, static, circle, type
     bodyDef.position.x = x / this._scale;
     bodyDef.position.y = y / this._scale;
     bodyDef.userData = { width: w2, height: h2, static: static, type: type, userName: username, kick: false };
-    bodyDef.allowSleep = false;
+    bodyDef.allowSleep = true;
     bodyDef.linearDamping = dam;
 
     var body;
@@ -251,7 +251,7 @@ World.prototype.applyForce = function (username, force) {
 
                     //f.m_body.ApplyForce(new b2Vec2(forceVec.forceX*100, forceVec.forceY*100) , f.m_body.m_xf.position);
 
-                    f.m_body.SetLinearVelocity(new b2Vec2(forceVec.forceX * .7, forceVec.forceY * .7));
+                    f.m_body.SetLinearVelocity(new b2Vec2(forceVec.forceX * .5, forceVec.forceY * .5));
 
                     //console.log(forceVec.forceX + " " + forceVec.forceY);
 
