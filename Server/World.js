@@ -249,9 +249,9 @@ World.prototype.applyForce = function (username, force) {
 
                     var forceVec = JSON.parse(force);
 
-                    //f.m_body.ApplyForce(new b2Vec2(forceVec.forceX*100, forceVec.forceY*100) , f.m_body.m_xf.position);
+                    f.m_body.ApplyForce(new b2Vec2(forceVec.forceX*100, forceVec.forceY*100) , f.m_body.m_xf.position);
 
-                    f.m_body.SetLinearVelocity(new b2Vec2(forceVec.forceX * .5, forceVec.forceY * .5));
+                    //f.m_body.SetLinearVelocity(new b2Vec2(forceVec.forceX * .5, forceVec.forceY * .5));
 
                     //console.log(forceVec.forceX + " " + forceVec.forceY);
 
