@@ -249,7 +249,7 @@ World.prototype.applyForce = function (username, force) {
 
                     var forceVec = JSON.parse(force);
 
-                    f.m_body.ApplyForce(new b2Vec2(forceVec.forceX*300, forceVec.forceY*300) , f.m_body.m_xf.position);
+                    f.m_body.ApplyForce(new b2Vec2(forceVec.forceX*200, forceVec.forceY*200) , f.m_body.m_xf.position);
 
                     //f.m_body.SetLinearVelocity(new b2Vec2(forceVec.forceX * .5, forceVec.forceY * .5));
 
